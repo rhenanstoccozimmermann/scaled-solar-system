@@ -1,0 +1,177 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.container {
+  display: flex;
+  margin: 5rem auto;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.object-card {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.object-image {
+  width: 10rem;
+}
+
+.sagan-quote {
+  width: 50%;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+}
+
+.btn-to-scale {
+  color: #ffffff;
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.obs-to-scale {
+  font-size: 1rem;
+}
+
+.data-card {
+  width: 20rem;
+  margin: 0.5rem;
+  border: 0.1rem solid #ffffff;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.scaled-object-image {
+  width: 100%;
+}
+
+.scaled-object-card:nth-of-type(1) {
+  width: 28rem;
+}
+
+.scaled-object-card:nth-of-type(2) {
+  width: 0.1rem;
+}
+
+.scaled-object-card:nth-of-type(3) {
+  width: 0.24rem;
+}
+
+.scaled-object-card:nth-of-type(4) {
+  width: 0.26rem;
+}
+
+.scaled-object-card:nth-of-type(5) {
+  width: 0.14rem;
+}
+
+.scaled-object-card:nth-of-type(6) {
+  width: 2.86rem;
+}
+
+.scaled-object-card:nth-of-type(7) {
+  width: 2.42rem;
+}
+
+.scaled-object-card:nth-of-type(8) {
+  width: 1.02rem;
+}
+
+.scaled-object-card:nth-of-type(9) {
+  width: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+
+  html {
+    font-size: 12px;
+  }
+
+  .scaled-object-card {
+    font-size: 0.5rem;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  html {
+    font-size: 8px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .container {
+    margin: 2.5rem auto;
+  }
+
+  .object-image {
+    width: 12.5rem;
+  }
+
+  .scaled-container {
+    display: flex;
+    justify-content: unset;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .scaled-object-card {
+    margin: 0.5rem 1.5rem;  
+    flex: 0 0 auto;
+  }
+  
+  .scaled-object-card:nth-of-type(1) {
+    width: 42rem;
+  }
+  
+  .scaled-object-card:nth-of-type(2) {
+    width: 0.15rem;
+  }
+  
+  .scaled-object-card:nth-of-type(3) {
+    width: 0.36rem;
+  }
+  
+  .scaled-object-card:nth-of-type(4) {
+    width: 0.39rem;
+  }
+  
+  .scaled-object-card:nth-of-type(5) {
+    width: 0.21rem;
+  }
+  
+  .scaled-object-card:nth-of-type(6) {
+    width: 4.29rem;
+  }
+  
+  .scaled-object-card:nth-of-type(7) {
+    width: 3.63rem;
+  }
+  
+  .scaled-object-card:nth-of-type(8) {
+    width: 1.53rem;
+  }
+  
+  .scaled-object-card:nth-of-type(9) {
+    width: 1.5rem;
+  }
+
+}
