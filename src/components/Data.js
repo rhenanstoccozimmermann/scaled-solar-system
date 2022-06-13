@@ -9,14 +9,16 @@ class Data extends React.Component {
       <div>
         <Title headline="Tamanhos e Distâncias" />
         <section className="container">
-          { objectsData.map(({ name, size, distance }, i) => (
+          { 
+            objectsData.map(({ name, size, distance }, i) => (
               <DataCard
                 key={ i }
                 objectName={ name }
                 objectSize={ size }
                 objectDistance={ distance }
               />
-            )) }
+            ))
+          }
         </section>
       </div>
     );

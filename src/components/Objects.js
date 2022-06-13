@@ -18,18 +18,20 @@ class Objects extends React.Component {
       <div>
         <Title headline="Corpos Celestes" />
         <section className={ (isScaled) ? "container scaled-container" : "container" }>
-          { objectsImages.map(({ name, image }, i) => (
-            <ObjectCard
-              key={ i }
-              objectName={ name }
-              objectImage={ image }
-              isScaled={ isScaled }
-            />
-          )) }
+          { 
+            objectsImages.map(({ name, image }, i) => (
+              <ObjectCard
+                key={ i }
+                objectName={ name }
+                objectImage={ image }
+                isScaled={ isScaled }
+              />
+            ))
+          }
         </section>
         {
           (isScaled)
-            ? (     
+            ? (  
                 <p className="sagan-quote">
                   "Consider again that dot. That's here, that's home, that's us." (Carl Sagan, em "Pálido Ponto Azul", sobre uma fotografia do Planeta Terra tirada pela sonda Voyager 1, a uma distância de 6 bilhões de km).
                 </p>
@@ -41,7 +43,7 @@ class Objects extends React.Component {
           onClick={ this.handleToScale }
           className="btn-to-scale"
         >
-          { (isScaled) ? 'Remover a Escala' : 'Colocar em Escala'}
+          { (isScaled) ? 'Remover a Escala' : 'Colocar em Escala' }
         </button>
         <p className="obs-to-scale">
           Observação: a escala é apenas em tamanho. A escala em distância é inviável.
